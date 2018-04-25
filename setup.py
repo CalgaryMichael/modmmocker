@@ -29,8 +29,15 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6'
     ],
-    keywords='json api',
-    py_modules=["liquify"],
+    keywords='mongo mock test',
+    py_modules=["modmmocker"],
+    install_requires=[
+        'mypy==0.590',
+        'pymodm==0.4.0',
+        'pymongo==3.6.1',
+        'typed-ast==1.1.0',
+        '-e git+https://github.com/CalgaryMichael/mongomock.git@issue-382#egg=mongomock'
+    ],
     extras_require={
         'test': ['mock'],
     }
