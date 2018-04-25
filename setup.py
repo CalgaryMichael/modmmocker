@@ -36,7 +36,7 @@ setup(
         'pymodm==0.4.0',
         'pymongo==3.6.1',
         'typed-ast==1.1.0',
-        'mongomock==b0.0.1'
+        'mongomocker==0.0.1'
     ],
     extras_require={
         'test': ['mock'],

@@ -2,7 +2,7 @@ import io
 import copy
 import inspect
 import json
-import mongomock
+import mongomocker
 import mock
 from bson import ObjectId
 from pymodm import MongoModel
@@ -40,7 +40,7 @@ def _mocker(model: MongoModel, mock_data: list=None, filepath: str=None):
     mock_data = handle_cls(model, mock_data)
 
     # build collection
-    mock_collection = mongomock.MongoClient().db.collection
+    mock_collection = mongomocker.MongoClient().db.collection
     mock_collection.insert_many(mock_data)
 
     # for mocking create functions
