@@ -29,7 +29,6 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6'
     ],
-<<<<<<< HEAD
     keywords='mongo mock test',
     py_modules=["modmmocker"],
     install_requires=[
@@ -39,10 +38,6 @@ setup(
         'typed-ast==1.1.0',
         'mongomock==b0.0.1'
     ],
-=======
-    keywords='json api',
-    py_modules=["liquify"],
->>>>>>> parent of cc04855... added requirements to the setup file
     extras_require={
         'test': ['mock'],
     }
