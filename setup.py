@@ -36,7 +36,10 @@ setup(
         'pymodm==0.4.0',
         'pymongo==3.6.1',
         'typed-ast==1.1.0',
-        '-e git+https://github.com/CalgaryMichael/mongomock.git@issue-382#egg=mongomock'
+        'mongomock==0.1.0'
+    ],
+    dependency_links=[
+        'git+https://github.com/CalgaryMichael/mongomock.git@issue-382#egg=mongomock==0.1.0'
     ],
     extras_require={
         'test': ['mock'],
