@@ -39,7 +39,7 @@ setup(
         'mongomockfork==0.1.0'
     ],
     dependency_links=[
-        'git+https://github.com/CalgaryMichael/mongomock.git@issue-382#egg=mongomockfork==0.1.0'
+        'git+https://github.com/CalgaryMichael/mongomock.git@issue-382#egg=mongomock-0.1.0'
     ],
     extras_require={
         'test': ['mock'],
