@@ -38,6 +38,9 @@ setup(
         'typed-ast==1.1.0',
         'mongomocker==0.0.1'
     ],
+    dependency_links = [
+        'git+https://github.com/CalgaryMichael/mongomock.git@issue-382#egg=mongomocker-0.0.1'
+    ],
     extras_require={
         'test': ['mock'],
     }
